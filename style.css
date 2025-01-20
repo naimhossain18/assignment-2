@@ -1,0 +1,148 @@
+/* -------------------------font-style-------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-fonts {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* --------------------shared-style---------------------- */
+
+.display-flex {
+  display: flex;
+}
+.display-grid {
+  display: grid;
+}
+.orange-color {
+  color: #fea301;
+}
+.sky-blue {
+  color: skyblue;
+}
+
+/* ------------------------body-style----------------------- */
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 1px solid black; */
+}
+
+/* ----------------------navbar-style--------------------- */
+
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-logos {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: auto;
+}
+.nav-links {
+  gap: 32px;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+}
+.nav-item {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.home {
+  color: #fea301;
+}
+.about {
+  color: skyblue;
+  font-weight: 500;
+}
+.facilities {
+  color: #05d4df;
+  font-weight: 500;
+}
+.admission {
+  color: #5d58ef;
+  font-weight: 500;
+}
+.nav-btn {
+  color: white;
+  background-color: #fea301;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 50px;
+  font-weight: 600;
+}
+.hamburger-menu {
+  display: none;
+}
+
+/* -----------------------banner-style----------------------- */
+.banner-container{
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-content{
+    max-width: 640px;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0px;
+}
+.banner-des{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+}
+.banner-btn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: black ;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 50px;
+}
+
+/* ------------------------responsive-layout---------------- */
+
+@media screen and (max-width: 576px) {
+  .hamburger-menu {
+    display: inline-block;
+  }
+  .nav-title,
+  .nav-item {
+    display: none;
+  }
+  .navbar{
+    padding: 20px;
+    border-bottom: 1px solid orange;
+    justify-content: space-between;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+    padding: 15px;
+    text-align: center;
+  }
+  .banner-images{
+    width: calc( 100% - 40px);
+  }
+ 
+}
