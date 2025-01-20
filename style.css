@@ -22,6 +22,9 @@
 .sky-blue {
   color: skyblue;
 }
+.color-3 {
+  color: #8700ff;
+}
 
 /* ------------------------body-style----------------------- */
 
@@ -92,35 +95,112 @@ nav li a {
 }
 
 /* -----------------------banner-style----------------------- */
-.banner-container{
-    justify-content: space-around;
-    align-items: center;
+.banner-container {
+  justify-content: space-around;
+  align-items: center;
 }
-.banner-content{
-    max-width: 640px;
-}
-
-.banner-title{
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: black;
-    margin: 0px;
-}
-.banner-des{
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: black;
-}
-.banner-btn{
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: white;
-    background-color: black ;
-    border-radius: 10px;
-    border: none;
-    padding: 10px 50px;
+.banner-content {
+  max-width: 640px;
 }
 
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+  margin: 0px;
+}
+.banner-des {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: black;
+}
+.banner-btn {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 50px;
+}
+
+/* ------------------------standard-curriculum-style------------ */
+.curriculum-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.section-title {
+  font-size: 2.95rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin: 0px;
+  margin-top: 60px;
+}
+.card-container {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+.card {
+  /* max-width: calc() 368px; */
+  text-align: center;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(
+    180deg,
+    rgba(222, 245, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+.card-b-linear {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 244, 220, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+.card-c-linear {
+  background-image: linear-gradient(
+    180deg,
+    rgba(238, 225, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #202020;
+}
+.card-des {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #808080;
+  margin: 20px auto;
+  max-width: 286px;
+}
+.card-btn {
+  font-size: 0.95rem;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  margin: 20px auto;
+}
+.arrow-container {
+  text-align: center;
+}
+.card-arrow {
+  color: white;
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  padding: 10px 12px;
+}
 /* ------------------------responsive-layout---------------- */
 
 @media screen and (max-width: 576px) {
@@ -128,21 +208,24 @@ nav li a {
     display: inline-block;
   }
   .nav-title,
-  .nav-item {
+  .nav-item,
+  .card-arrow {
     display: none;
   }
-  .navbar{
+  .navbar {
     padding: 20px;
     border-bottom: 1px solid orange;
     justify-content: space-between;
   }
-  .banner-container{
+  .banner-container {
     flex-direction: column-reverse;
     padding: 15px;
     text-align: center;
   }
-  .banner-images{
-    width: calc( 100% - 40px);
+  .banner-images {
+    width: calc(100% - 40px);
   }
- 
+  .card-container {
+    flex-direction: column;
+  }
 }
