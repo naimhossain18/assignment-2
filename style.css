@@ -457,4 +457,7 @@ footer li a {
   .marquee {
     font-size: 2rem;
   }
+  .footer-logo{
+    object-fit: contain;
+  }
 }
