@@ -227,14 +227,14 @@ nav li a {
   align-items: center;
   gap: 60px;
   text-align: center;
-  
+
   background-image: linear-gradient(
       0deg,
       rgba(254, 183, 55, 1),
       rgba(255, 255, 255, 1)
     ),
     url(./assets/bg.png);
-    background-blend-mode: overlay;
+  background-blend-mode: overlay;
 }
 .story-card-container {
   display: grid;
@@ -242,7 +242,6 @@ nav li a {
   grid-template-rows: repeat(1, 1fr);
   justify-items: center;
   align-items: stretch;
-  
 }
 .big-card {
   max-width: 540px;
@@ -277,7 +276,6 @@ nav li a {
   gap: 20px;
   justify-items: center;
   align-items: center;
-  
 }
 .small-card {
   border-radius: 20px;
@@ -332,10 +330,10 @@ nav li a {
 }
 
 /* ---------------------------footer-style------------------- */
-footer{
+footer {
   background-color: #01acfd;
 }
-.footer-container{
+.footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -349,16 +347,16 @@ footer{
   /* background-color: white; */
   color: white;
   width: 100%;
-  height:90px;
+  height: 90px;
   /* margin: 20px; */
 }
-.footer-title{
-  font-size: 2.50rem;
+.footer-title {
+  font-size: 2.5rem;
   font-weight: bold;
   color: white;
   margin: 0px;
 }
-.footer-des{
+.footer-des {
   font-size: 1.25rem;
   font-weight: 400;
   color: white;
@@ -368,27 +366,35 @@ footer{
   font-weight: bold;
   color: white;
 }
-.footer-link-item, .touch-item {
+.footer-link-item,
+.touch-item {
   list-style: none;
 }
 .footer-links {
   flex-direction: column;
   gap: 20px;
 }
-footer li a{
+footer li a {
   text-decoration: none;
   color: white;
 }
-.keep-in-touch{
+.keep-in-touch {
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; 
+  align-items: center;
   text-align: left;
-} 
+}
 .touch-items {
   gap: 20px;
   padding-left: 0px;
 }
+
+.marquee {
+  font-size: 3rem;
+  font-weight: bold;
+  color: gray;
+}
+
 /* ------------------------responsive-layout---------------- */
 
 @media screen and (max-width: 576px) {
@@ -397,7 +403,7 @@ footer li a{
   }
   .nav-title,
   .nav-item,
-  .card-arrow,
+  .arrow-container,
   .story-card {
     display: none;
   }
@@ -414,41 +420,41 @@ footer li a{
   .banner-images {
     width: calc(100% - 40px);
   }
-  .banner-title{
+  .banner-title {
     font-size: 2rem;
   }
-  .section-title{
+  .section-title {
     font-size: 2rem;
   }
-  
+
   .card-container {
     flex-direction: column;
     text-align: center;
     padding: 25px;
   }
-  .small-card-container{
+  .small-card-container {
     padding: 30px;
     align-items: stretch;
+  }
+  .small-card {
+    width: 174px;
+    align-items: stretch;
+    /* height:180px; */
+  }
+  .small-card-date {
+    max-width: 104px;
+    font-size: 0.55rem;
+    left: 20px;
+    bottom: -12px;
+  }
 
-}
-.small-card{
-  width: 174px;
-  align-items: stretch;
-  /* height:180px; */
-}
-.small-card-date{
-  max-width: 104px;
-  font-size: .55rem;
-  left: 20px;
-  bottom: -12px;
-
-}
-
-.footer-container{
-  grid-template-columns: 1fr;
-  justify-items: left;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
+  .footer-container {
+    grid-template-columns: 1fr;
+    justify-items: left;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .marquee {
+    font-size: 2rem;
+  }
 }
